@@ -24,9 +24,10 @@
 }
 
 .fly {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
-  text-align: left;
+  text-align: center;
 }
 
 .App > div > button {
@@ -40,6 +41,7 @@
   /* margin: auto; */
   align-self: center;
   /* justify-self: right; */
+  padding: 10px 0px;
 }
 .inputField input {
   width: 50px;

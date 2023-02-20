@@ -29,21 +29,27 @@ function App() {
           <fieldset>
             <legend>Fly to coordinates</legend>
             <label>
-              latitude:
+              Latitude:
+              <br />
               <input type="number" name="latitude" id="lat" />
             </label>
             <br />
+
             <label>
-              longitude:
+              Longitude:
+              <br />
               <input type="number" name="longitude" id="lon" />
             </label>
             <br />
+
             <label>
-              zoom:
+              Zoom:
+              <br />
               <input type="number" name="zoom" id="zoom" />
             </label>
             <br />
-            <button onClick={fly}>Fly to coordinates</button>
+            <br />
+            <button onClick={fly}>Fly!</button>
           </fieldset>
         </form>
         {/* <input type="text" name="" placeholder="23.1172" id="lat" />
@@ -58,7 +64,7 @@ function fly() {
   let lat = document.querySelector("#lat").value;
   let lon = document.querySelector("#lon").value;
   let zoom = document.querySelector("#zoom").value;
-  console.log(lat, lon);
+  // console.log(lat, lon);
   mapbox.flyto(lat, lon, zoom);
 }
 
